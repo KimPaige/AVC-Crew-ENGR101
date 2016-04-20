@@ -1,0 +1,30 @@
+#include <stdio.h> 
+#include <time.h>  
+\\these load specific methods from the ENGR101 library 
+
+extern "C" int InitHardware(); 
+extern "C" int Sleep(int sec, int usec); 
+extern "C" int SetMotor(int motor ,int dir,int speed); 
+
+
+int main(){
+	InitHardware(); 	
+	SetMotor(1, 1, 255);  
+	SetMotor(2, 0, 255);  
+	Sleep(0,500000); 
+ 	return 0;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
