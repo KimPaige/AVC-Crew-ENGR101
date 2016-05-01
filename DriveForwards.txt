@@ -6,7 +6,7 @@ extern "C" int InitHardware();
 extern "C" int Sleep(int sec, int usec); 
 extern "C" int SetMotor(int motor ,int dir,int speed); 
 
-
+\\has this been tested to ensure motors are driving with correct orientation, not just the same direction? (forwards not backwards)
 int main(){
 	InitHardware(); 	
 	SetMotor(1, 1, 255);  
